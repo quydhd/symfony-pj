@@ -4,15 +4,15 @@
         .table { border-collapse: collapse; }
         .table th, td {
             border-bottom: 1px solid #ddd;
-            width: 250px;
+            width: 350px;
             text-align: left;
             align: left;
         }
     </style>
 {% endblock %}
 {% block body %}
-    <h2>Books database application!</h2>
-    <table class = "table">
+    <h2 class="text-danger text-center">Books database application!</h2>
+    <table class = "table table-dark table-striped">
         <tr>
             <th>Name</th>
             <th>Author</th>
@@ -27,8 +27,7 @@
         {% endfor %}
     </table>
         <a href = "{{ path('app_book_new') }}">Add</a>
-    </div>
-    <table class = "table">
+    <table class = "table table-dark table-striped">
         <tr>
             <th>Name</th>
             <th>Author</th>
